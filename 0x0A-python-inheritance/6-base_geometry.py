@@ -1,7 +1,10 @@
 #!/usr/bin/python3
-"""Defines an object attribute lookup function."""
+"""Defines a base geometry class BaseGeometry."""
 
 
-def lookup(obj):
-    """Return a list of an object's available attributes."""
-    return (dir(obj))
+class BaseGeometry:
+    """Represent base geometry."""
+
+    def area(self):
+        """Not implemented."""
+        raise Exception("area() is not implemented")
